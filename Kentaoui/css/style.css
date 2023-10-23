@@ -194,100 +194,6 @@ nav ul li a{
 
 
 
-
-
-
-/************************************Conatct*****************************************/
-.contact_form .container-text h2{
-    font-size: 60px;
-    font-weight: 400;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    text-align: center;
-}
-.contact_form .container img{
-    width: 45%;
-    height: 45%;
-    margin-right: 90px;
-    margin-top: 60px;
-    border-radius: 10px;
-    border: 3px solid black;
-
-}
-.contact_form {
-    
-    margin: 0 auto;
-    margin-bottom: 30px;
-    padding: 10px 10px 15px 10px;
-    border-radius: 5px;
-    
-    
-}
-.form-1 {
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-}
-
-label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 3px solid black;
-    border-radius: 3px;
-    font-size: 16px;
-    resize: none;
-}
-
-input[type="submit"] {
-    background-color: black;
-    color: #fff;
-    border: none;
-    padding: 10px 20px ;
-    border-radius: 3px;
-    cursor: pointer;
-    font-size: 16px;
-   
-}
-
-
-/******************footer**************/
-
-.footer{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(200px,auto));
-    background: #7f4f24;
-    gap:3.5rem;
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: auto;
-    padding: 50px;
-  
-    
-    
-    
-}
-.footer-content img{
-    height: 50%;
-    width: 50%;
-}
-.footer-content h4{
-    color: white;
-    margin-bottom: 1.5rem;
-    font-size: 20px;
-}
-
 .heading{
     text-align: center;
 
@@ -310,9 +216,6 @@ input[type="submit"] {
 .shop-container{
     display: flex;
     flex-wrap: wrap;
-    
-    /* display: grid;
-    grid-row: inherit; */
     gap: 1rem;
     margin-top: 5rem;
 
@@ -466,17 +369,26 @@ width: 60%;
 
 
 /**********************FAQS*****************/
-.faqbg{
-    background: ;
-    padding: 20px;
+.video-faq video{
+  
+    width: 100%;
+    
 }
-
+.video-faq{
+    width: 100%;
+}
 .title{
     font-size: 50px;
     text-align: center;
     margin-top: 80px;
     margin-bottom: 40px;
-    text-decoration: none;
+    text-decoration: underline 4px;
+}
+.faqbg{
+    background: url(/atay/bg3.png);
+    margin-bottom: 50px;
+}
+.faqbg h1{
     color: #7f4f24;
 }
 
@@ -496,11 +408,11 @@ width: 60%;
     justify-content: space-between;
     align-items: center;
     padding: 20px 15px;
-    border-radius: 20px;
     border:none;
+    border-radius: 20px;
     outline: none;
     font-size: 22px;
-    color: #f4f4f4;
+    color: #fff;
     font-weight: 700;
     cursor: pointer;
 }
@@ -526,6 +438,166 @@ width: 60%;
 .question button .d-arrow.rotate{
     transform: rotate(180deg);
 }
+
+
+
+/*****************CONTACT US **********************/
+#overlay{
+    width: 100%;
+    height: 100vh;
+    background-color: #eaeaea;
+    display: flex;
+    justify-content: space-between;
+}
+
+form{
+    max-width: 550px;
+    width: 90%;
+    background: #fff;
+    margin: 17vh auto 0 auto;
+    padding: 40px;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+h1{
+    margin: 0;
+    text-align: center;
+}
+
+label{
+    display: block;
+    margin: 20px 0;
+}
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    resize: none;
+    border: none;
+    border-bottom: 3px solid #7f4f24;
+    
+}
+input[type="text"]:focus, textarea:focus{
+    border-bottom:  1px solid red;
+
+}
+
+textarea::-webkit-scrollbar {
+    width: 4px;
+}
+
+textarea ::-webkit-scrollbar-thumb{
+    background-color: red;
+}
+
+.center{
+    text-align: center;
+}
+input[type="submit"]{
+    margin-top: 30px;
+    width: 90%;
+    max-width: 200px;
+    background: #7f4f24;
+    color:white;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.error{
+    color: red;
+
+}
+
+.error-border{
+    border-bottom: 1px solid red ;
+}
+
+#succces{
+    color: green;
+}
+
+
+
+
+.maps{
+    background: red;
+    padding: 50px;
+}
+
+iframe{
+    width: 80%;
+    height: 80vh;
+   
+   
+}
+/******************footer**************/
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+    background: #7f4f24;
+    gap:3.5rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: auto;
+    padding: 50px;
+  
+    
+}
+.footer-content img{
+    height: 50%;
+    width: 50%;
+}
+.footer-content h4{
+    color: white;
+    margin-bottom: 1.5rem;
+    font-size: 20px;
+}
+
+/************************about l3aybat********************/
+.home{
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+   
+
+}
+.home-text{
+    flex: 1 1 17rem;
+}
+/* .home-img{
+    flex: 1 1 17rem;
+} */
+.home-img img{
+    animation: animate 3s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        transform: translate(-10px,0);
+    }
+    50%{
+        transform: translate(-0px,10px);
+    }
+    100%{
+        transform: translate(-10px,0);
+    }
+
+}
+
+.home-text h1{
+    font-size: 3rem;
+    color: green;
+    font-weight: bolder;
+}
+
 
 
 

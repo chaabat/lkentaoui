@@ -13,65 +13,71 @@
         <nav>
             <ul role="list" class="navbar-items">
                 <li><a href="main.html">Home</a></li>
-                <li><a href="about.html">Menu</a></li>
-                <li><a href="autre.html">News</a></li>
+                <li><a href="produits.html">produits</a></li>
+                <li><a href="produits.html">khawya</a></li>
+                <li><a href="faq.html">FAQ</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
+
     </div>
-    <div class="contact_form">
-        <section class="container">
-            <form  class="form-1"> 
-                
-                    <div >
-                        
-                            <h2>Contact Us</h2>
-                        
-                            <label for="name">Name:</label>
-                            <input type="text" id="name" name="name" required><br><br>
-                            
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" required><br><br>
-                            
-                            <label for="message">Message:</label><br>
-                            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
-                            
-                            
-                            <input type="submit" value="Send">
-                       
-                    </div>
-                
-                    <img src="/atay/home.png" alt="pic" title="chaabat">
+
+    
+    <div  id="overlay">
+        <form onsubmit="event.preventDefault();ValidateForm">
+          <h1>Conatct Us</h1>
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Your name">
+          <small class="error"></small>
+      
+          <label for="name">Email</label>
+          <input type="email" id="email" placeholder="Your email">
+          <small class="error"></small>
+      
+          <label for="name">Message</label>
+          <textarea type="message"  placeholder="Your message" rows="6"> </textarea>
+          <small class="error"></small>
+      
+          <div class="center">
+            <input type="submit" value="Send Message">
+            <p id="success"></p>
+          </div>
+          
+        </form>
+
+        
+       </div>
+       <div class="maps">
+       <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d14200.0601610542!2d-13.20069!3d27.155817!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjfCsDA5JzIwLjkiTiAxM8KwMTInMDIuNSJX!5e0!3m2!1sen!2sus!4v1698073857900!5m2!1sen!2sus"  ></iframe>
+    </div>
+
+
+       <section class="footer">
+        <div class="footer-content">
+            <img src="/atay/logo.png">
             
-            </form>
-            
-        </section>
+        </div>
+        <div class="footer-content">
+            <h4>Catégories</h4>
+            <li><a href="#"><a>Thé</a></li>
+            <li><a href="#"><a>Les Arômes Gingembre</a></li>
+            <li><a href="#"></a>Cadeaux & Coffrets</li>
+        </div>
+        <div class="footer-content">
+            <h4>About</h4>
+            <li><a href="#"><a>Qui somme nous</a></li>
+            <li><a href="#"><a>Modes de paiement</a></li>
+            <li><a href="#"></a>Responsabilité et règlement</li>
+        </div>
+        <div class="footer-content">
+            <h4>Reach Us</h4>
+            <li><a href="#"><a>Contactez nous</a></li>
+            <li><a href="#"><a>Politique de confidentialité</a></li>
+            <li><a href="#"></a>Accessoires</li>
         </div>
 
+    </section>
 
-        <section class="footer">
-            <div class="footer-content">
-                <img src="/atay/logo.png">
-                
-            </div>
-            <div class="footer-content">
-                <h4>Catégories</h4>
-                <li><a href="#"><a>Thé</a></li>
-                <li><a href="#"><a>Les Arômes Gingembre</a></li>
-                <li><a href="#"></a>Cadeaux & Coffrets</li>
-            </div>
-            <div class="footer-content">
-                <h4>About</h4>
-                <li><a href="#"><a>Qui somme nous</a></li>
-                <li><a href="#"><a>Modes de paiement</a></li>
-                <li><a href="#"></a>Responsabilité et règlement</li>
-            </div>
-            <div class="footer-content">
-                <h4>Reach Us</h4>
-                <li><a href="#"><a>Contactez nous</a></li>
-                <li><a href="#"><a>Politique de confidentialité</a></li>
-                <li><a href="#"></a>Accessoires</li>
-            </div>
-
-        </section>
-    
+    <script src="../javascript/main.js"></script>
+</body>
+</html>

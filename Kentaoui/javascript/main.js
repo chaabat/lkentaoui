@@ -39,3 +39,35 @@ for (i = 0; i < len; i++) {
     }
   });
 }
+
+
+
+
+
+// const nameInput = document.querySelector("#name");
+// const nameInput = document.querySelector("#email");
+// const nameInput = document.querySelector("#message");
+// const nameInput = document.querySelector("#success");
+// const nameInput = document.querySelectorAll(".error");
+
+
+
+
+
+
+
+
+
+// function ValidateForm(){
+
+//   clearMessages();
+//   if(nameInput.ariaValueMax.lenght <1){
+//     errornodes[0].innerText = "Name cannot be blank";
+//     nameInput.classList.add("error-border");
+//   }
+
+// }
+
+// function clearMessages(){
+//   for(let i=0;)
+// }
