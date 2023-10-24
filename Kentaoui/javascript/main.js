@@ -1,7 +1,16 @@
-
-
-
 const buttons = document.querySelectorAll('button');
+const navMobile = document.querySelector(".navbar-mobile");
+const burgerBtn = document.querySelector(".burger");
+
+
+burgerBtn.addEventListener("click" , () =>{
+     if(navMobile.style.display == "none"){
+      navMobile.style.display = "block";
+     }
+     else{
+      navMobile.style.display = "none";
+     }
+} );
 
 buttons.forEach( button =>{
     button.addEventListener('click',()=>{
@@ -27,6 +36,8 @@ for (i = 0; i < len; i++) {
     }
   });
 }
+
+
 
 
 

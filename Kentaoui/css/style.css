@@ -7,6 +7,11 @@
     box-sizing: border-box;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
 body{
     font-family: 'Poppins', sans-serif; 
 }
@@ -49,7 +54,25 @@ nav ul li a{
 }
 
 
+nav svg{
+    width: 40px;
+    height: 40px;
+    display: none;
 
+}
+
+
+.navbar-mobile{
+    display: none;
+    text-align: center;
+    width: 100%;
+    background-color: #7f4f24;
+    padding: 1rem 0;
+    font-weight: 600;
+    color: #fff;
+    
+    
+}
 
 
 
@@ -76,7 +99,7 @@ nav ul li a{
 .content-text h2.product-header span{
     font-weight: 900;
     color:#7f4f24;
-    font-size: 4rem;
+    font-size: 2.5rem;
 }
 
 .content-text p.product-des{
@@ -105,10 +128,11 @@ nav ul li a{
     max-width: 80%;
     margin-right: 30px;
     margin-top: 30px;
+    
 }
 
 
-.shape{
+/* .shape{
     position: absolute;
     top: 0;
     left: 0;
@@ -118,6 +142,25 @@ nav ul li a{
     z-index: -1;
     clip-path: circle(400px at right 600px);
 
+} */
+
+@media screen and (max-width:767px){
+    .content{
+        display: block;
+
+    }
+    .content-text h2.product-header span{
+        font-size: 1rem;
+    }
+
+    .navbar-items{
+        display: none;
+    }
+
+    nav svg{
+        display: block;
+        cursor: pointer;
+    }
 }
 
 
@@ -238,14 +281,6 @@ nav ul li a{
     margin: 0.5rem;
     text-align: justify;
 }
-
-
-
-
-
-
-
-
 
 
 
