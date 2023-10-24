@@ -560,34 +560,33 @@ iframe{
 /************************about l3aybat********************/
 .home{
     width: 80%;
-    height: 100vh;
+    height: 80%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    margin: auto;
    
 
 }
 .home-text{
     flex: 1 1 17rem;
 }
-/* .home-img{
-    flex: 1 1 17rem;
-} */
+
 .home-img img{
     animation: animate 3s linear infinite;
 }
 
 @keyframes animate{
     0%{
-        transform: translate(-10px,0);
+        transform: translate(-50px,0);
     }
     50%{
-        transform: translate(-0px,10px);
+        transform: translate(-0px,50px);
     }
     100%{
-        transform: translate(-10px,0);
+        transform: translate(-50px,0);
     }
 
 }
