@@ -133,64 +133,7 @@ nav ul li a{
 
 }
 
-.thumb ul li{
-    list-style: none;
-    display: inline-block;
-    margin: 0 20px;
-    cursor: pointer;
-    transition: 0.5s;
-}
 
-.thumb ul li:hover{
-    transform: translateY(-15px);
-}
-
-.thumb ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.thumb ul li img{
-    max-width: 35px;
-}
-
-@media only screen and (max-width:1030px) {
-    .content{
-        flex-direction: column;
-    }
-
-    .shape{
-        clip-path: circle(400px at center bottom);
-    }
-
-    .content-text h2.product-header{
-        font-size: 3em;
-    }
-
-    .content-picture{
-        position: relative;
-    }
-
-    .content-picture .socials{
-        position: absolute;
-        bottom: 0px;
-        right: -50px;
-    }
-
-    .content-text{
-        margin-bottom: 80px;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-
-    .content-picture img.atay{
-        max-width: 60%;
-        margin-right: 0;
-    }
- 
-}
 
 
 
@@ -557,43 +500,55 @@ iframe{
     font-size: 20px;
 }
 
-/************************about l3aybat********************/
+/************************preparation thé********************/
 .home{
     width: 80%;
-    height: 80%;
+    height: 0%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
     margin: auto;
+    gap: 1rem;
    
+
+}
+
+.textprepar h1{
+    color: #7f4f24;
+    font-size: 3rem;
+    margin-top: 20px;
+    margin-bottom: 50px;
+
 
 }
 .home-text{
     flex: 1 1 17rem;
 }
-
+.home-img{
+    width: auto;
+    height: auto;
+}
 .home-img img{
     animation: animate 3s linear infinite;
 }
 
 @keyframes animate{
     0%{
-        transform: translate(-50px,0);
+        transform: translate(-10px,0);
     }
     50%{
-        transform: translate(-0px,50px);
+        transform: translate(-0px,10px);
     }
     100%{
-        transform: translate(-50px,0);
+        transform: translate(-10px,0);
     }
 
 }
 
 .home-text h1{
-    font-size: 3rem;
-    color: green;
+    font-size: 2rem;
+    color: #7f4f24;
     font-weight: bolder;
 }
 

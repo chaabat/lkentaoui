@@ -1,16 +1,4 @@
-function imgSlide(imgSrc){
-    document.querySelector(".atay").src = imgSrc
 
-}
-
-function changeColors(color){
-    const shape = document.querySelector(".shape");
-    const button = document.querySelector(".learn-more");
-    const atay = document.querySelector("h2.product-header span");
-    shape.style.backgroundColor = color;
-    button.style.backgroundColor = color;
-    atay.style.color = color;
-}
 
 
 const buttons = document.querySelectorAll('button');
