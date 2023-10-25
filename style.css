@@ -420,7 +420,7 @@ width: 60%;
 }
 
 .left{
-	background: url("atay/contactbg.png") no-repeat center;
+	background: url(atay/contactbg.png) no-repeat center;
 	background-size: cover;
 	height: 100%;
 }
