@@ -241,7 +241,7 @@ nav svg{
 
 }
 .shop{
-    background: url(/atay/8.jpg) no-repeat;
+    background: url(atay/8.jpg) no-repeat;
     background-size: cover;
     padding: 30px;
 }
@@ -339,7 +339,7 @@ width: 60%;
     text-decoration: underline 4px;
 }
 .faqbg{
-    background: url(/atay/bg3.png);
+    background: url(atay/bg3.png);
     margin-bottom: 50px;
 }
 .faqbg h1{
