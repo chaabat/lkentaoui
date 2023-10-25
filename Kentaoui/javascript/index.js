@@ -45,6 +45,34 @@ burgerBtn.addEventListener("click" , () =>{
 } );
 
 
+/******************validation email********************************/
+
+let contact_input = document.getElementsByClassName("field");
+
+for (let i = 0; i <= contact_input.length; i++) {
+  contact_input[i].addEventListener("invalid", () => {
+    contact_input(contact_input[i]);
+  });
+
+  contact_input[i].addEventListener("input", () => {
+    input_error(contact_input[i]);
+  });
+}
+
+
+function input_error(x) {
+  if (x.validity.valueMissing) {
+    x.setCustomValidity("Ce champ est Invalid");
+  } else if (x.validity.typeMismatch) {
+    x.setCustomValidity("Email invalide");
+  } else {
+    x.setCustomValidity("");
+    return true;
+  }
+  
+}
+
+
 
 
 

@@ -24,7 +24,7 @@
 
     </div>
     <ul role="list" class="navbar-mobile">
-        <li><a href="main.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="produits.html">Produits</a></li>
         <li><a href="about.html">Preparation </a></li>
         <li><a href="faq.html">FAQ</a></li>
@@ -36,11 +36,13 @@
 			<div class="left"></div>
 			<div class="right">
 				<h2>Contact Us</h2>
-				<input type="text" class="field" placeholder="Votre Nom">
-				<input type="text" class="field" placeholder="Votre Email">
-				<input type="text" class="field" placeholder="Téléphone">
-				<textarea placeholder="Votre Message" class="field"></textarea>
-				<button class="btn">Envoyer</button>
+                <form action="https://formsubmit.co/smilemoreinfo@gmail.com" method="POST">
+				<input type="text" class="field" placeholder="Votre Nom " required>
+				<input type="email" class="field" placeholder="Votre Email" required>
+				<input type="number" class="field" placeholder="Téléphone" required>
+				<textarea placeholder="Votre Message" class="field" required></textarea>
+				<button class="btn" type="submit">Envoyer</button>
+            </form>
 			</div>
 		</div>
 	</div>
