@@ -132,17 +132,6 @@ nav svg{
 }
 
 
-/* .shape{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #7f4f24;
-    z-index: -1;
-    clip-path: circle(400px at right 600px);
-
-} */
 
 @media screen and (max-width:767px){
     .content{
@@ -150,7 +139,7 @@ nav svg{
 
     }
     .content-text h2.product-header span{
-        font-size: 1rem;
+        font-size: 2rem;
     }
 
     .navbar-items{
@@ -407,95 +396,82 @@ width: 60%;
 
 
 /*****************CONTACT US **********************/
-#overlay{
-    width: 100%;
-    height: 100vh;
-    background-color: #eaeaea;
-    display: flex;
-    justify-content: space-between;
+.container{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 100px;
 }
 
-form{
-    max-width: 550px;
-    width: 90%;
-    background: #fff;
-    margin: 17vh auto 0 auto;
-    padding: 40px;
-    border-radius: 3px;
-    box-sizing: border-box;
-}
-h1{
-    margin: 0;
-    text-align: center;
+.contact-box{
+	max-width: 850px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #fff;
+	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
 }
 
-label{
-    display: block;
-    margin: 20px 0;
-}
-input, textarea{
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    outline: none;
-    resize: none;
-    border: none;
-    border-bottom: 3px solid #7f4f24;
-    
-}
-input[type="text"]:focus, textarea:focus{
-    border-bottom:  1px solid red;
-
+.left{
+	background: url("/atay/k1.png") no-repeat center;
+	background-size: cover;
+	height: 100%;
 }
 
-textarea::-webkit-scrollbar {
-    width: 4px;
+.right{
+	padding: 25px 40px;
 }
 
-textarea ::-webkit-scrollbar-thumb{
-    background-color: red;
+h2{
+	position: relative;
+	padding: 0 0 10px;
+	margin-bottom: 10px;
 }
 
-.center{
-    text-align: center;
-}
-input[type="submit"]{
-    margin-top: 30px;
-    width: 90%;
-    max-width: 200px;
-    background: #7f4f24;
-    color:white;
-    font-size: 17px;
-    cursor: pointer;
-    border-radius: 3px;
-}
-
-.error{
-    color: red;
-
-}
-
-.error-border{
-    border-bottom: 1px solid red ;
-}
-
-#succces{
-    color: green;
+.field{
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
 }
 
 
-
-
-.maps{
-    background: red;
-    padding: 50px;
+textarea{
+	min-height: 150px;
 }
 
-iframe{
-    width: 80%;
-    height: 80vh;
-   
-   
+.btn{
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background-color: #7f4f24;
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.btn:hover{
+    background-color: #ae4b27;
+}
+
+@media screen and (max-width: 880px){
+	.contact-box{
+		grid-template-columns: 1fr;
+	}
+	.left{
+		height: 200px;
+	}
 }
 /******************footer**************/
 
@@ -574,8 +550,85 @@ iframe{
     font-weight: bolder;
 }
 
+/*******************cont***************************/
+/* .cont{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    background: blue;
+
+}
 
 
+.contact-in{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    
+    padding: 10px;
+    border-radius: 10px;
+    background: #333;
+    box-shadow: 0px 0px 10px 0px #666;
+}
 
+.contact-map{
+    width:100% ;
+    height: auto;
+    flex: 50%;
+}
+.contact-map iframe{
+
+    width:100% ;
+    height: 100%;
+    flex: 50%;
+}
+.contact-form{
+    width: 100%;
+    height: auto;
+    flex: 50%;
+}
+.contact-form h1{
+    margin-bottom: 10px;
+    text-align: center;
+}
+.contact-form-txt{
+    width: 100%;
+    height: 40px;
+    color: #000;
+    border: 2px solid #7f4f24;
+    border-radius: 50px;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 15px;
+    justify-content: space-between;
+
+}
+.contact-form-txtarea{
+    width: 70%;
+    height: 40px;
+    color: #000;
+    border: 2px solid #7f4f24;
+    border-radius: 50px;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 15px;
+   
+
+}
+.contact-form-btn{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius:50px ;
+    background: red;
+    text-transform: uppercase;
+    padding: 10px 0 ;
+    cursor: pointer;
+    font-size: 20px;
+
+} */
 
 
